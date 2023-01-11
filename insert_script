@@ -1,0 +1,48 @@
+/*department*/
+
+insert into department(dname,capacity) values ('AI','10');
+insert into department(dname,capacity) values ('Networking','11');
+insert into department(dname,capacity) values ('CS','15');
+insert into department(dname,capacity) values ('Theoritical Computation','7');
+insert into department(dname,capacity) values ('EC','8');
+insert into department(dname,capacity) values ('Statistics','10');		
+
+/*Course*/
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS511','Algorithms','Data Structures and Algorithms are often considered as the foundation of computer science.','1','1','4','150');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS512','Software Architecture and Design Practices','The course takes a practitioner’s view of design and architecture providing exposure to analysis techniques to arrive at the most suitable architecture for a given set of requirements.','1','1','4','250');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS513','Artificial Intelligence','DThis course has typically been preferred by students who wish to carry out high-quality research and get a start on a publication record .','1','2','6','50');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS514','Fundamentals of Theoretical Neuroscience','This course introduces the student to the neuron and its various classifications and functions, spike production, synapse types and synaptic plasticity. ','1','2','6','60');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS611','Network-Based Computing for HPC',' We will study advances in networking and computing technologies as well as the computing demands of current and emerging applications. ','2','1','4','85');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS612','Mobile Computing','This course offers a complete understanding of the 5G Next-Generation Radio Access Network (5G NG-RAN) Signallingof protocols implemented in the NG-RAN. ','2','1','4','80');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS613','Few-shot learning (FSL)','FSL (AI 831) introduced and elaborated on the theory of few-shot learning (FSL) - an advanced and radically disruptive machine learning paradigm emerging in the recent years. ','2','2','4','90');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS614','The Web and the Mind','This course is an introduction to the cognitive and psychological dimension of human participation in the World Wide Web.','2','2','4','40');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS711','Advanced Data Visualization (ADV)','The basic course focused on visualization techniques based on data types,theoretical aspects of visualization, and an introduction to visual analytics.','3','1','4','150');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS712','Foundations of Cryptography',' The focus of this course will be on definitions and constructions of various cryptographic objects','3','1','4','200');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS713','Geographic Information Systems (GIS)','It
+introduces principles, applications, trends and pertinent research issues of GIS, including remote sensing, cartography, global positioning systems (GPS) and geospatial data analysis','3','1','4','200');
+insert into course(course_code,course_name,description,year,term ,credits ,capacity) values ('CS714','Internet of Things','IoT is a multidisciplinary topic. Topics such as sensing/actuation, communication, networking, Data analysis, machine learning, decision engines must be considered along with concerns about privacy and security. ','3','1','4','100');
+
+
+
+/*Course schedule*/
+insert into course_schedule(time,day,room,building,course_id) values('15:15','Monday','103','Aryabhata','1');
+insert into course_schedule(time,day,room,building,course_id) values('15:15','Monday','203','Aryabhata','2');
+insert into course_schedule(time,day,room,building,course_id) values('10:05','Tuesday','103','Ramanujan','3');
+insert into course_schedule(time,day,room,building,course_id) values('11:15','Wednesday','203','Ramanujan','4');
+insert into course_schedule(time,day,room,building,course_id) values('9:30','Thursday','105','Aryabhata','5');
+insert into course_schedule(time,day,room,building,course_id) values('14:30','Friday','106','Ramanujan','6');
+insert into course_schedule(time,day,room,building,course_id) values('10:05','Tuesday','105','Aryabhata','7');
+insert into course_schedule(time,day,room,building,course_id) values('11:15','Friday','203','Ramanujan','8');
+insert into course_schedule(time,day,room,building,course_id) values('15:30','Thursday','104','Aryabhata','9');
+insert into course_schedule(time,day,room,building,course_id) values('11:15','Monday','106','Ramanujan','10');
+insert into course_schedule(time,day,room,building,course_id) values('9:30','Thursday','115','Aryabhata','11');
+insert into course_schedule(time,day,room,building,course_id) values('9:30','Saturday','116','Ramanujan','12');
+insert into course_schedule(time,day,room,building,course_id) values('11:15','Wednesday','117','Aryabhata','2');
+insert into course_schedule(time,day,room,building,course_id) values('14:30','Tuesday','103','Ramanujan','3');
+insert into course_schedule(time,day,room,building,course_id) values('15:45','Friday','107','Aryabhata','4');
+insert into course_schedule(time,day,room,building,course_id) values('15:45','Friday','107','Aryabhata','4');
+
+
+
+
+

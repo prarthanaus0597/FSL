@@ -1,0 +1,35 @@
+SELECT * from course c  where faculty_id IS NULL;---->list---->done
+
+cid and eid 
+
+
+
+Course clash ---->check 
+
+
+
+select cs.* from course c JOIN course_schedule cs on c.course_id=cs.course_id  where course_id!=1 and  c.faculty_id=9 and  exists
+(select (time,day) from  course_schedule c2  where c2.course_id=1 and c2.time=cs.time and c2.day=cs.day );
+
+
+
+select * from course c JOIN course_schedule cs on c.course_id=cs.course_id  where course_id!=*cid* and  c.faculty_id=*eid* and  exists
+(select (time,day) from  course_schedule c2  where course_id=*cid* and c2.time=cs.time and c2.day=cs.day );
+
+
+
+_____________________________________________________________________________________________
+
+updated succesfully --->if check returns somthing error msg else call update 
+
+update course
+set faculty_id=eid 
+where course_id=cid
+and faculty_id IS NULL;
+
+
+
+update course
+set faculty_id=9 
+where course_id=1
+and faculty_id IS NULL;
